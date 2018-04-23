@@ -1,0 +1,17 @@
+﻿<XtraSerializer version="16.1.0.0">
+  <Items>
+    <Item1 ItemKind="DiagramRoot" PageSize="800,600" SelectedStencils="BasicShapes, CustomStencil">
+      <Children>
+        <Item1 Position="100,42" Size="300,100" Angle="0" Shape="BasicShapes.Ellipse" ItemKind="DiagramShapeEx" Description="EllipseDescription" ShapeID="5" />
+        <Item2 Position="100,320" Size="300,50" Angle="0" Shape="BasicShapes.Rectangle" ItemKind="DiagramShapeEx" Description="RectangleDescription" ShapeID="6" />
+        <Item3 Position="100,180" Size="300,100" Angle="0" Shape="BasicShapes.Ellipse" Content="standard ellipse" ItemKind="DiagramShape" />
+        <Item4 Position="100,400" Size="300,50" Angle="0" Shape="BasicShapes.Rectangle" Content="standard rectangle" ItemKind="DiagramShape" />
+        <Item5 Position="500,200" Size="100,110" Angle="0" Shape="BasicShapes.Star6" ItemKind="DiagramShape" />
+        <Item6 BeginItemPointIndex="1" EndItemPointIndex="0" Points="550,92" ItemKind="DiagramConnector" BeginItem="0" EndItem="4" BeginPoint="400,92" EndPoint="550,200" />
+        <Item7 BeginItemPointIndex="1" EndItemPointIndex="10" Points="490,230 490,227.5" ItemKind="DiagramConnector" BeginItem="2" EndItem="4" BeginPoint="400,230" EndPoint="506.698729810778,227.5" />
+        <Item8 BeginItemPointIndex="1" EndItemPointIndex="8" Points="490,345 490,282.5" ItemKind="DiagramConnector" BeginItem="1" EndItem="4" BeginPoint="400,345" EndPoint="506.698729810778,282.5" />
+        <Item9 BeginItemPointIndex="1" EndItemPointIndex="6" Points="550,425" ItemKind="DiagramConnector" BeginItem="3" EndItem="4" BeginPoint="400,425" EndPoint="550,310" />
+      </Children>
+    </Item1>
+  </Items>
+</XtraSerializer>

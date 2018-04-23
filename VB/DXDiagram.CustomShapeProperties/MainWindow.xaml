@@ -1,0 +1,11 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxdiag="http://schemas.devexpress.com/winfx/2008/xaml/diagram" x:Class="MainWindow"
+    Title="MainWindow" Height="720" Width="1280">
+    <Grid>
+
+        <dxdiag:DiagramDesignerControl x:Name="diagram" SelectedStencils="BasicShapes, BasicFlowchartShapes"/>
+
+    </Grid>
+</Window>
