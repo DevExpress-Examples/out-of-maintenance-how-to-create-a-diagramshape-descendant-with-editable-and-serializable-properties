@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [DiagramData.xml](./CS/DXDiagram.CustomShapeProperties/DiagramData.xml) (VB: [DiagramData.xml](./VB/DXDiagram.CustomShapeProperties/DiagramData.xml))
-* [MainWindow.xaml](./CS/DXDiagram.CustomShapeProperties/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/DXDiagram.CustomShapeProperties/MainWindow.xaml.vb))
+* [MainWindow.xaml](./CS/DXDiagram.CustomShapeProperties/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/DXDiagram.CustomShapeProperties/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/DXDiagram.CustomShapeProperties/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/DXDiagram.CustomShapeProperties/MainWindow.xaml.vb))
 * [ShapeClasses.cs](./CS/DXDiagram.CustomShapeProperties/ShapeClasses.cs) (VB: [ShapeClasses.vb](./VB/DXDiagram.CustomShapeProperties/ShapeClasses.vb))
 <!-- default file list end -->
