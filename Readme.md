@@ -18,14 +18,14 @@ public int DatabaseObjectID { get; set; }
 ```
 
 
-<p><br>2) Call the ItemTypeRegistrator.Register method to register your custom shape type for serialization. Custom shape types should be registered at the application start. If the custom shape is used in the Diagram Designer, it is recommended to also register it in the shape type's static constructor.</p>
+<p><br>2) Call the <strong>ItemTypeRegistrator.Register</strong> method to register your custom shape type for serialization. Custom shape types should be registered at the application start. If the custom shape is used in the Diagram Designer, it is recommended to also register it in the shape type's static constructor.</p>
 
 
 ```cs
 DiagramControl.ItemTypeRegistrator.Register(typeof(DiagramShapeEx));
 ```
-<p><br> 3) Make sure that your custom item class has a parameterless constructor
-
+<p><br> 3) Make sure that your custom item class has a <strong>parameterless constructor</strong>
+<br>
 <p><strong>Note:</strong><br><em>In certain scenarios, it is easier to use the DiagramShape.Tag property to store custom data without creating DiagramShape descendants. In this case, no further steps are needed as the Tag property is serialized by default.<br><br></em></p>
 <p>To allow end-users to edit your custom property in the Properties Panel, handle the CustomGetEditableItemProperties event.</p>
 
