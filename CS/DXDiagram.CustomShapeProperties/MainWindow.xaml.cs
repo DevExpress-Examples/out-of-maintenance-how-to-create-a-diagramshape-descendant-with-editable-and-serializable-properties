@@ -15,9 +15,17 @@ namespace DXDiagram.CustomShapeProperties {
         }
         void RegisterStencil() {
             var stencil = new DevExpress.Diagram.Core.DiagramStencil("CustomStencil", "Custom Shapes");
-            var itemTool = new FactoryItemTool("CustomShape", () => "Custom Shape", diagram => { DiagramShapeEx customShape = new DiagramShapeEx() { Width = 100, Height = 50 }; return customShape; }, new System.Windows.Size(100, 50), false);
+            var itemTool = new FactoryItemTool(
+                "CustomShape",
+                () => "Custom Shape", diagram => {
+                    DiagramShapeEx customShape = new DiagramShapeEx() { Width = 100, Height = 50 };
+                    return customShape;
+                },
+                new Size(100, 50),
+                false
+            );
             stencil.RegisterTool(itemTool);
-            DevExpress.Diagram.Core.DiagramToolboxRegistrator.RegisterStencil(stencil);
+            DiagramToolboxRegistrator.RegisterStencil(stencil);
             DiagramControl.ItemTypeRegistrator.Register(typeof(DiagramShapeEx));
         }
 
