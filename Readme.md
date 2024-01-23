@@ -70,6 +70,7 @@ This example demonstrates how to serialize and allow users to edit custom proper
 
 * [Shapes](https://docs.devexpress.com/WPF/116099/controls-and-libraries/diagram-control/diagram-items/shapes)
 * [DiagramShape](https://docs.devexpress.com/WPF/DevExpress.Xpf.Diagram.DiagramShape)
+* [Saving and Loading Diagrams](https://docs.devexpress.com/WPF/118180/controls-and-libraries/diagram-control/saving-and-loading-diagrams)
 * [DiagramControl.CustomGetEditableItemProperties](https://docs.devexpress.com/WPF/DevExpress.Xpf.Diagram.DiagramControl.CustomGetEditableItemProperties)
 
 ## More Examples
