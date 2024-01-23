@@ -1,10 +1,5 @@
-﻿Imports System.Collections.Generic
-Imports System.ComponentModel
-Imports System.Linq
-Imports System.Windows
-Imports DevExpress.Diagram.Core
-Imports DevExpress.Xpf.Diagram
 Imports DevExpress.Utils.Serializing
+Imports DevExpress.Xpf.Diagram
 
 Namespace DXDiagram.CustomShapeProperties
 
@@ -12,15 +7,10 @@ Namespace DXDiagram.CustomShapeProperties
         Inherits DiagramShape
 
         <XtraSerializableProperty>
-        Public Property Description() As String
-
-        <XtraSerializableProperty>
-        Public Property ShapeID() As Integer
+        Public Property Description As String
 
         Shared Sub New()
             DiagramControl.ItemTypeRegistrator.Register(GetType(DiagramShapeEx))
         End Sub
-
     End Class
-
 End Namespace

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
     <TargetFramework>net6.0-windows</TargetFramework>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>DXDiagram.CustomShapeProperties</RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>DXDiagram.CustomShapeProperties</AssemblyName>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
@@ -15,46 +17,32 @@
     <UseWindowsForms>true</UseWindowsForms>
     <UseWPF>true</UseWPF>
     <Platforms>x86;AnyCPU</Platforms>
-    <DocumentationFile>DXDiagram.CustomShapeProperties.xml</DocumentationFile>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
-    <DefaultItemExcludes>obj*/**</DefaultItemExcludes>
+    <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
   </PropertyGroup>
   <ItemGroup>
-    <Import Include="System.Threading.Tasks" />
-    <Import Include="System.Linq" />
-    <Import Include="System.Xml.Linq" />
-    <Import Include="Microsoft.VisualBasic" />
-    <Import Include="System" />
-    <Import Include="System.Collections" />
-    <Import Include="System.Collections.Generic" />
-    <Import Include="System.Diagnostics" />
-    <Import Include="System.Windows" />
-    <Import Include="System.Windows.Controls" />
-    <Import Include="System.Windows.Data" />
-    <Import Include="System.Windows.Documents" />
-    <Import Include="System.Windows.Input" />
-    <Import Include="System.Windows.Shapes" />
-    <Import Include="System.Windows.Media" />
-    <Import Include="System.Windows.Media.Imaging" />
-    <Import Include="System.Windows.Navigation" />
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugTest|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugTest\</OutputPath>
+    <DefineConstants>DEBUG,DEBUGTEST,TRACE</DefineConstants>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="My Project\MyExtensions\MyWpfExtension.vb">
-      <VBMyExtensionTemplateID>Microsoft.VisualBasic.WPF.MyExtension</VBMyExtensionTemplateID>
-      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
-    </Compile>
-    <AppDesigner Include="My Project\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="DiagramData.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <Content Include="DiagramData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="DevExpress.Data" Version="22.2.*-*" />
     <PackageReference Include="DevExpress.Data.Desktop" Version="22.2.*-*" />
     <PackageReference Include="DevExpress.Diagram.Core" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Images" Version="22.2.*-*" />
     <PackageReference Include="DevExpress.Mvvm" Version="22.2.*-*" />
     <PackageReference Include="DevExpress.Office.Core" Version="22.2.*-*" />
     <PackageReference Include="DevExpress.Printing.Core" Version="22.2.*-*" />
@@ -63,8 +51,6 @@
     <PackageReference Include="DevExpress.Wpf.Core" Version="22.2.*-*" />
     <PackageReference Include="DevExpress.Wpf.Diagram" Version="22.2.*-*" />
     <PackageReference Include="DevExpress.Wpf.Docking" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.DocumentViewer.Core" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.PropertyGrid" Version="22.2.*-*" />
     <PackageReference Include="DevExpress.Wpf.Reporting" Version="22.2.*-*" />
     <PackageReference Include="DevExpress.Wpf.Ribbon" Version="22.2.*-*" />
     <PackageReference Include="DevExpress.Wpf.Themes.All" Version="22.2.*-*" />
